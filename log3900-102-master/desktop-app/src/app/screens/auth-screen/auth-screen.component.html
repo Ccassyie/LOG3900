@@ -1,0 +1,48 @@
+<div class="component">
+
+  <div class="login-section">
+    <h1>Colorimage</h1>
+    <div class="sign-in-form">
+
+      <h1>Log In</h1>
+      <form class="column-form">
+        <label class="label" for="email">Email</label>
+        <input class="login-input" name="email" placeholder="Type email" type="email" />
+        <label class="label" for="password">Password</label>
+        <input
+          class="login-input"
+          name="password"
+          placeholder="Type password"
+          type="password"
+        />
+        <a class="forgot-password" href=>Forgot password ?</a>
+        <button (click)="auth()" class="login-button" type="submit">Login</button>
+      </form>
+      <hr />
+      <h2>Other log in option</h2>
+      <button class="sign-in-with-social-media google" style="display: block"><fa-icon [icon]="faGoogle" size="lg"></fa-icon>Log in with Google</button>
+      <button class="sign-in-with-social-media facebook" style="display: block"><fa-icon [icon]="faFacebookSquare" size="lg"></fa-icon>Continue with Facebook</button>
+    </div>
+    <div class="register-rection">
+      <h2>Don't have an account ?</h2>
+      <button class="register-button">Sign up</button>
+    </div>
+
+  </div>
+  <div class="carousel-container">
+    <img class="carousel-image" src="https://images.pexels.com/photos/934718/pexels-photo-934718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="carousel-image">
+    <div class="carousel-navigation">
+      <div class="carousel-buttons">
+        <fa-icon class="carousel-action left" [icon]="leftCarouselIcon"></fa-icon>
+        <fa-icon class="carousel-action right" [icon]="rightCarouselIcon"></fa-icon>
+      </div>
+      <div class="carousel-index">
+        <div class="image-index active"></div>
+        <div class="image-index"></div>
+        <div class="image-index"></div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

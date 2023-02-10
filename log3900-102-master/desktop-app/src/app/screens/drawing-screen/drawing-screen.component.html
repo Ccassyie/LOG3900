@@ -1,0 +1,49 @@
+<div class="navbar">
+  <div class="left-navbar-features">
+    <button mat-icon>
+      <mat-icon svgIcon="left-arrow" (click)="toAlbums()"></mat-icon>
+    </button>
+    <button mat-icon>
+      <mat-icon svgIcon="images"></mat-icon>
+    </button>
+  </div>
+  <div class="middle-navbar-features">
+    <div class="drawing-tools">
+      <button mat-icon>
+        <mat-icon svgIcon="circle"></mat-icon>
+      </button>
+      <button mat-icon>
+        <mat-icon svgIcon="switch-arrow"></mat-icon>
+      </button>
+      <button mat-icon>
+        <mat-icon svgIcon="circle"></mat-icon>
+      </button>
+
+      <button mat-icon>
+        <mat-icon svgIcon="square"></mat-icon>
+      </button>
+      <button mat-icon>
+        <mat-icon svgIcon="pencil"></mat-icon>
+      </button>
+      <button mat-icon>
+        <mat-icon svgIcon="hand-pointer"></mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="right-navbar-features">
+    <button mat-icon>
+      <mat-icon svgIcon="message"></mat-icon>
+    </button>
+    <button mat-icon>
+      <mat-icon svgIcon="user"></mat-icon>
+    </button>
+
+    <div (click)="toAccountScreen()" class="username">Username</div>
+  </div>
+</div>
+<div class="chat-icon">
+  <button mat-icon>
+    <mat-icon svgIcon="user"></mat-icon>
+  </button>
+</div>
+<svg class="canvas"></svg>
